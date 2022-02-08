@@ -1,4 +1,4 @@
-import {AbstractConverter} from "@geekcornernpm/convert-base-api";
+import {AbstractConverter} from "@modifiedcommand/convert-base-api";
 import {AbstractInput} from "./input/AbstractInput.mjs";
 import {AbstractLog} from "./log/AbstractLog.mjs";
 import {AbstractOutput} from "./output/AbstractOutput.mjs";
