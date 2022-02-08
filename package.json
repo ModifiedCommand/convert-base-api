@@ -1,0 +1,31 @@
+{
+  "name": "@geekcornernpm/convert-base-api",
+  "type": "module",
+  "productName": "ConvertBaseApi",
+  "version": "1.0.6",
+  "description": "Base API for convert",
+  "keywords": [
+    "API",
+    "Base",
+    "Convert"
+  ],
+  "author": "ozelot379",
+  "license": "GPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozelot379/ConvertBaseApi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ozelot379/ConvertBaseApi/issues"
+  },
+  "homepage": "https://github.com/ozelot379/ConvertBaseApi#readme",
+  "dependencies": {
+    "@geekcornernpm/jimp-plugins": "1.4.6",
+    "jszip": "3.7.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "main": "src/index.mjs"
+}
