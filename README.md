@@ -13,13 +13,19 @@ If you need older support, please try to use something like `webpack` or `babel`
 Add it as a dependency to your `package.json`
 
 ```bash
-yarn add @geekcornernpm/convert-base-api
+yarn add github:ModifiedCommand/convert-base-api
+```
+
+or
+
+```bash
+yarn add @modifiedcommand/convert-base-api
 ```
 
 Create an API class
 
 ```javascript
-import {AbstractBaseApi} from "@geekcornernpm/convert-base-api";
+import {AbstractBaseApi} from "@modifiedcommand/convert-base-api";
 
 /**
  * Class ConvertXYZApi
@@ -39,7 +45,7 @@ export {ConvertXYZApi};
 ## Use it in your code
 
 ```javascript
-import {ConsoleLog, Input, LocalFileInputEntry, LocalFileOutput} from "@geekcornernpm/convert-base-api";
+import {ConsoleLog, Input, LocalFileInputEntry, LocalFileOutput} from "@modifiedcommand/convert-base-api";
 import {ConvertXYZApi} from "...";
 
 let output;
