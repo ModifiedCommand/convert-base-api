@@ -1,5 +1,5 @@
 {
-  "name": "@geekcornernpm/convert-base-api",
+  "name": "@modifiedcommand/convert-base-api",
   "type": "module",
   "productName": "ConvertBaseApi",
   "version": "1.0.6",
@@ -9,16 +9,16 @@
     "Base",
     "Convert"
   ],
-  "author": "ozelot379",
+  "author": "modifiedcommand",
   "license": "GPL-3.0-only",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ozelot379/ConvertBaseApi.git"
+    "url": "git+https://github.com/modifiedcommand/ConvertBaseApi.git"
   },
   "bugs": {
-    "url": "https://github.com/ozelot379/ConvertBaseApi/issues"
+    "url": "https://github.com/modifiedcommand/ConvertBaseApi/issues"
   },
-  "homepage": "https://github.com/ozelot379/ConvertBaseApi#readme",
+  "homepage": "https://github.com/modifiedcommand/ConvertBaseApi#readme",
   "dependencies": {
     "@geekcornernpm/jimp-plugins": "1.4.6",
     "jszip": "3.7.1"
@@ -27,5 +27,6 @@
   "engines": {
     "node": ">=14.0.0"
   },
+  "publishConfig": { "registry": "https://registry.npmjs.org" },
   "main": "src/index.mjs"
 }
