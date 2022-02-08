@@ -59,6 +59,16 @@ class BufferOutput extends AbstractOutput {
      */
     async rename(from, to) {
         //this.zip.rename(from, to);
+        // https://github.com/Stuk/jszip/pull/622
+        for (const [key, entry] of Object.entries(this.zip.files)) {
+            if (from.endsWith("/") ? entry.name.startsWith(from) : entry.name === from) {
+                delete this.zip.files[key];
+
+                entry.name = (to + entry.name.substr(from.length));
+
+                this.zip.files[entry.name] = entry;
+            }
+        }
     }
 
     /**
@@ -86,7 +96,18 @@ class BufferOutput extends AbstractOutput {
      * @inheritDoc
      */
     async copy(from, to) {
-        this.zip.copy(from, to);
+        // https://github.com/Stuk/jszip/pull/622
+        for (const entry of Object.values(this.zip.files)) {
+            if (from.endsWith("/") ? entry.name.startsWith(from) : entry.name === from) {
+                // https://stackoverflow.com/questions/41474986/how-to-clone-a-javascript-es6-class-instance#answer-41474987
+                const clonedEntry = Object.assign({}, entry);
+                Object.setPrototypeOf(clonedEntry, entry.__proto__);
+
+                clonedEntry.name = (to + clonedEntry.name.substr(from.length));
+
+                this.zip.files[clonedEntry.name] = clonedEntry;
+            }
+        }
     }
 
     /**
