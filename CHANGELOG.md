@@ -1,5 +1,9 @@
 # Changelog
 
+## [[v1.0.10]](https://github.com/ModifiedCommand/convert-base-api/releases/tag/v1.0.10)
+- Upgrade jszip to 3.7.1
+- Fixed `BufferOutput.mjs` for `rename` and `copy` functions
+
 ## [[v1.0.9]](https://github.com/ModifiedCommand/convert-base-api/releases/tag/v1.0.9)
 - Downgrade jszip to 3.5.0 for testing
 
