@@ -1,0 +1,25 @@
+name: Node.js Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  publish-yarn:
+    environment: publish-package
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          always-auth: true
+          node-version: "14.x"
+          registry-url: "https://registry.npmjs.org"
+          scope: "@modifiedcommand"
+      - name: Publish
+        run: yarn publish --access public 
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
