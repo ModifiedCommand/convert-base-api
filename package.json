@@ -2,7 +2,7 @@
   "name": "@modifiedcommand/convert-base-api",
   "type": "module",
   "productName": "ConvertBaseApi",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Base API for convert",
   "keywords": [
     "API",
