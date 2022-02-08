@@ -2,7 +2,7 @@
   "name": "@modifiedcommand/convert-base-api",
   "type": "module",
   "productName": "ConvertBaseApi",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Base API for convert",
   "keywords": [
     "API",
@@ -21,7 +21,7 @@
   "homepage": "https://github.com/modifiedcommand/ConvertBaseApi#readme",
   "dependencies": {
     "@geekcornernpm/jimp-plugins": "1.4.6",
-    "jszip": "3.7.1"
+    "jszip": "3.5.0"
   },
   "devDependencies": {},
   "engines": {
